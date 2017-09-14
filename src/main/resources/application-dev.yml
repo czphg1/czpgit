@@ -1,0 +1,26 @@
+server:
+  port: 9000 #端口
+  context-path: /czp #项目的url
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  thymeleaf:
+    cache: false #关闭缓存，开发时最好关闭
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_czp
+    username: root
+    password: 123456
+
+#jpa:
+ #   hibernate:
+  #    ddl-auto: update
+   # show-sql: true
+
+logging:
+  level:
+    com:
+      example:
+        czp: debug #显示mybatis的sql语句
+  file: D:\czp_file\log.log
+uploadPath: D:\czp_file\upload

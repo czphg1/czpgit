@@ -1,0 +1,29 @@
+server:
+  port: 80 #端口
+  context-path: /example #项目的url
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  thymeleaf:
+    cache: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_example
+    username: root
+    password: czp5365778
+ # jpa:
+  #  hibernate:
+   #   ddl-auto: update
+ #   show-sql: true
+  http:
+    encoding:
+    #这个配置用来解决中文乱码问题（基本上默认都是UTF-8）
+      force: true
+logging:
+  level:
+    com:
+      example:
+        example: debug
+  file: /home/czp_file/log.log
+
+uploadPath: /home/czp_file/upload
