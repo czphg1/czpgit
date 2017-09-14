@@ -24,6 +24,7 @@ public class CzpApplication {
 		SpringApplication.run(CzpApplication.class, args);
 	}
 //	@Bean
+
 //	public HttpMessageConverters fastJsonHttpMessageConverters(){
 //		FastJsonHttpMessageConverter converter = new FastJsonHttpMessageConverter();
 //		FastJsonConfig config = new FastJsonConfig();
